@@ -12,10 +12,13 @@
 - Create SignIn User Account
 - Implement Sign in user Api 
 - Created Redux store  with userSlice
-- Implemented Sign out
+- Implemented Sign In/out
 - Update Profile
 - Fetch from TMDB Movies
-
+- BugFix: Sign up user display name and Profile picture page
+- BugFix: If the user is not logged in redirect to login page and vice versa 
+- Unsubscribe to the onAuthStateChanged callback
+-  
 
 
 # Features
