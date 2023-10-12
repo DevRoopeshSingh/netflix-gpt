@@ -6,3 +6,12 @@ export const LargeBackgroundImage =
 
 export const UserAvatar =
   "https://occ-0-3709-3662.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABZ2iWyDq0fR9TY_uztNZ4TcwWkPPdS2NdTtUt3EHjC_rkiEAexSxSUfbrAYTaiI5pcHVs5QMIAhgo1tVaDJr67VjRcr_ZCw.png?r=cad";
+
+ export const API_OPTIONS = {
+   method: "GET",
+   headers: {
+     accept: "application/json",
+     Authorization:
+       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzU1YWJhMmQ3MTcyODAyYjVhZWFjOGM3MzdhZGYxNCIsInN1YiI6IjY1MjQyNGM4NzQ1MDdkMDBlMjEzYzg4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qaFGrPGL7kiTy_TFURnmC9rN1-1Sww0vhWfRlV3d5RE",
+   },
+ }; 

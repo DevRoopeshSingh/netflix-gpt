@@ -58,7 +58,7 @@ const Login = () => {
           // if my response is success it will get an user object
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: { UserAvatar },
+            photoURL: UserAvatar,
           })
             .then(() => {
               // Profile updated! then

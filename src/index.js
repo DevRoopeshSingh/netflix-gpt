@@ -5,8 +5,9 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  //UseFull in development phase  showing logs twice will not show in production its only for development
+  // <React.StrictMode>
+  <App />
+  // </React.StrictMode>
 );
 
