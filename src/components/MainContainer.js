@@ -7,15 +7,15 @@ const MainContainer = () => {
   const movies = useSelector((store) => store.movies.nowPlayingMovies);
 
   if (!movies) return;
-  const mainMove = movies[2];
+  const mainMove = movies[Math.floor(Math.random() * 10) + 1];
 
   console.log(mainMove);
-  const { original_title, overview } = mainMove;
+  const { original_title, overview, id } = mainMove;
 
   return (
     <div>
       <VideoTitle title={original_title} overview={overview} />
-      <VideoBackground />
+      <VideoBackground videoId={id} />
     </div>
   );
 };
