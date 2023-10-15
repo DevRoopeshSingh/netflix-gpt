@@ -8,8 +8,6 @@ const MainContainer = () => {
 
   if (!movies) return;
   const mainMove = movies[Math.floor(Math.random() * 10) + 1];
-
-  console.log(mainMove);
   const { original_title, overview, id } = mainMove;
 
   return (
