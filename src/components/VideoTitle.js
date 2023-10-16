@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { BsFillVolumeMuteFill, BsFillVolumeUpFill } from "react-icons/bs";
 
 const VideoTitle = ({ title, overview }) => {
+  const [isMute, setIsMute] = useState(true);
+  const handleMute = () => {
+    setIsMute(!isMute);
+  };
+
   return (
     <div>
       <div className="w-screen aspect-video  pt-[10%] px-24 absolute bg-gradient-to-tr from-black">
@@ -20,6 +26,19 @@ const VideoTitle = ({ title, overview }) => {
               <AiOutlineInfoCircle style={{ fontSize: "2em" }} /> More Info
             </div>
           </button>
+        </div>
+        <div className="mute-button px-4 mt-4 cursor-pointer float-right ">
+          {isMute ? (
+            <BsFillVolumeMuteFill
+              onClick={handleMute}
+              style={{ fontSize: "3em", color: "white" }}
+            />
+          ) : (
+            <BsFillVolumeUpFill
+              onClick={handleMute}
+              style={{ fontSize: "3em", color: "white" }}
+            />
+          )}
         </div>
       </div>
     </div>

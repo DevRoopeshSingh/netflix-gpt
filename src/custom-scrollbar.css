@@ -1,0 +1,20 @@
+/* Hide horizontal scrollbar */
+/* For Webkit (Safari, Chrome, etc.) */
+::-webkit-scrollbar {
+    width: 0.1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hide vertical scrollbar */
+
+
+  
+  /* Optional: Customize scrollbar appearance using Tailwind CSS classes */
+  .scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+  }
+  
