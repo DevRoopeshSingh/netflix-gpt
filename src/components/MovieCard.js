@@ -2,6 +2,7 @@ import React from "react";
 import { IMAGE_CDN_URL } from "../utils/constants";
 
 function movieCard({ posterPath }) {
+  if (!posterPath) return;
   return (
     <div className="p-2">
       <img
