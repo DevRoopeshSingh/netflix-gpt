@@ -8,6 +8,7 @@ const moviesSlice = createSlice({
     popularMovie: null,
     topRated: null,
     upcomingMovie: null,
+    randomMovieIndex: Math.floor(Math.random() * 10) + 1,
   },
   reducers: {
     addNowPlayingMovie: (state, action) => {
@@ -34,5 +35,6 @@ export const {
   addPopularMovie,
   addTopRatedMovie,
   addUpcomingMovie,
+  addRandomMovieIndex,
 } = moviesSlice.actions;
 export default moviesSlice.reducer;
