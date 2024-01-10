@@ -15,7 +15,8 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzU1YWJhMmQ3MTcyODAyYjVhZWFjOGM3MzdhZGYxNCIsInN1YiI6IjY1MjQyNGM4NzQ1MDdkMDBlMjEzYzg4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qaFGrPGL7kiTy_TFURnmC9rN1-1Sww0vhWfRlV3d5RE",
+      //"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzU1YWJhMmQ3MTcyODAyYjVhZWFjOGM3MzdhZGYxNCIsInN1YiI6IjY1MjQyNGM4NzQ1MDdkMDBlMjEzYzg4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qaFGrPGL7kiTy_TFURnmC9rN1-1Sww0vhWfRlV3d5RE",
+      "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
