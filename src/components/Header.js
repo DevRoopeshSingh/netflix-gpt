@@ -65,14 +65,14 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-center md:justify-between ">
       <img
-        className="w-44 cursor-pointer"
+        className="w-44 mx-auto md:mx-0 cursor-pointer"
         src={netFlixLogo}
         alt="Netflix Logo"></img>
 
       {user && (
-        <div className="flex items-center ">
+        <div className="flex items-center  justify-center">
           {isShowGpt && (
             <select
               className="p-2 m-2 bg-gray-700 text-white rounded-md"

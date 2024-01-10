@@ -5,13 +5,18 @@ import { LargeBackgroundImage2 } from "../utils/constants";
 
 function GptSearchPage() {
   return (
-    <div>
+    <>
       <div className="fixed -z-10">
-        <img src={LargeBackgroundImage2} alt="Netflix Logo"></img>
+        <img
+          className="h-screen w-screen object-cover"
+          src={LargeBackgroundImage2}
+          alt="Netflix Logo"></img>
       </div>
-      <GptSearchBar />
-      <GptMovieSuggestion />
-    </div>
+      <div className="">
+        <GptSearchBar />
+        <GptMovieSuggestion />
+      </div>
+    </>
   );
 }
 

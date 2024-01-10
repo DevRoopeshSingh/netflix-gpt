@@ -36,8 +36,15 @@
 - topRated movie custom hook
 - GPT Search Page
 - GPT Search Bar 
--  (Bonus) Multi-language Feature in our App
-- 
+- (Bonus) Multi-language Feature in our App
+- Get Open AI API Call
+- GPT Search API Call
+- fetched gpt movies Suggestion from TMDB
+- created gptSlice added data
+- Reused moves list component to make movie suggestion container
+- Memoization
+- Add .env file
+- made our Site Responsive 
 
 
 
